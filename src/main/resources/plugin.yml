@@ -1,0 +1,16 @@
+name: SimpleBroadcasts
+version: ${project.version}
+main: net.urbanmc.simplebroadcasts.SimpleBroadcasts
+api-version: 1.13
+authors: [Silverwolfg11, Elian]
+description: A plugin that broadcast configurable messages at a configurable interval
+
+commands:
+  simplebroadcasts:
+    description: Command for simplebroadcasts
+    permission: simplebroadcasts.reload
+
+permissions:
+  simplebroadcasts.reload:
+    description: Reload simplebroadcasts
+    default: op

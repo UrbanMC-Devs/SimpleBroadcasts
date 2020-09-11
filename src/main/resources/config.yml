@@ -1,0 +1,14 @@
+## Simple Broadcasts
+## Developed by Silverwolfg11 and Elian
+## Formatting is handle by Mini-Message
+## https://github.com/KyoriPowered/adventure-text-minimessage
+
+# How often should messages be displayed (in seconds)
+interval: 300
+
+# Prefix before every messages
+prefix: "<gold>[<green>UrbanMC<gold>] <aqua>"
+
+# Messages to display
+messages:
+  - "This is a test broadcast!"
