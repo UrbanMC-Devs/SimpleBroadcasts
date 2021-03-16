@@ -2,7 +2,7 @@ package net.urbanmc.simplebroadcasts;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
-import net.kyori.adventure.text.serializer.bungeecord.BungeeCordComponentSerializer;
+import net.kyori.adventure.text.serializer.bungeecord.BungeeComponentSerializer;
 import net.md_5.bungee.api.chat.BaseComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -68,7 +68,7 @@ public class SimpleBroadcasts extends JavaPlugin {
 
             final Component kyoriComponent = MiniMessage.get().parse(prefix + message);
             // Store the messages as basecomponents for optimization purposes
-            BaseComponent[] components = BungeeCordComponentSerializer.get().serialize(kyoriComponent);
+            BaseComponent[] components = BungeeComponentSerializer.get().serialize(kyoriComponent);
 
             messages.add(components);
         }
@@ -89,7 +89,7 @@ public class SimpleBroadcasts extends JavaPlugin {
             // Verify message index
             if (messageIndex >= messages.size())
                 messageIndex = 0;
-        }, 0, secondsInterval * 20);
+        }, 0, secondsInterval * 20L);
     }
 
     @Override
