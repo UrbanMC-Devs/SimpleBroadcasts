@@ -1,6 +1,6 @@
 # SimpleBroadcasts
 
-A simple bukkit plugin that allows for configurable server-wide broadcasts at specific intervals.
+A simple bukkit plugin that allows for configurable server-wide broadcasts at specific intervals. Messages can be configured in `config.yml`. The plugin shades in the [MiniMessage](https://docs.adventure.kyori.net/minimessage.html) library which can be used to format JSON messages with hex color support and clickable/hover events.
 
 ## Installing
 This plugin can be installed from the [releases page](https://github.com/UrbanMC-Devs/SimpleBroadcasts/releases/latest).
